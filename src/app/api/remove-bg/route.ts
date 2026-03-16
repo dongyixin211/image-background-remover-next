@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     }
     const base64 = btoa(binary);
     
-    const apiKey = process.env.REMOVE_BG_API_KEY;
+    const apiKey = process.env.REMOVE_BG_API_KEY || "hDoFfreBddKHZmkuRr9ZgiiU";
     if (!apiKey) {
       return NextResponse.json({ error: "服务器未配置 API Key" }, { status: 500 });
     }
