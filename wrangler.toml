@@ -5,4 +5,5 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 REMOVE_BG_API_KEY = "hDoFfreBddKHZmkuRr9ZgiiU"
 
-pages_build_output_dir = ".vercel/output/static"
+[site]
+bucket = ".vercel/output/static"
